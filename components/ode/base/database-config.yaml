@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ode-database-config
+data:
+  VECTORDB_HOST: "ode-database"
+  VECTORDB_PORT: ""

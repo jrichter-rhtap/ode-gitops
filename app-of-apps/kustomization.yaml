@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: ode 
+  janus-idp.io/tekton: ode
+  backstage.io/kubernetes-id: ode
+  backstage.io/kubernetes-namespace: rhdh-app 
+  app.kubernetes.io/part-of: ode
+resources: 
+- application-dev.yaml

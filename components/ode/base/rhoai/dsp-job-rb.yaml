@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: ode-dsp-job-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: ode-dsp-job
+    namespace: rhdh-app
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: ode-dsp-job-role
